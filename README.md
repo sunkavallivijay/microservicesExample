@@ -1,7 +1,7 @@
 # microservicesExample
 Example code of Microservices implementation using Zuul proxy, Eureka service registy & Spring boot rest implementation
 
-stock-service calls db-service using restTemplate by getting the service from Eureka
+stock-service calls db-service using restTemplate by getting the service name: db-service from Eureka
 Zuul and Eureka are created as a single application
 
 Eureka Service admin URL: http://localhost:8761/
