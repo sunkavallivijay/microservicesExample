@@ -1,6 +1,6 @@
 # My Microservices Example
 - Example code of Microservices implementation using Zuul proxy, Eureka service registy & Spring boot rest implementation
-- All the projects in the zip are sping boot applications running on ports: 8300 (stockservice), 8301 (DB Service), 8761 (Eureka & Zuul)
+- All the projects in the zip are sping boot applications running on ports: 8300 (DB Service), 8301 (stockservice), 8761 (Eureka & Zuul)
 - Eureka is forcing port 8761, it is not working with other ports
 
 - stock-service calls db-service using restTemplate by getting the service name: db-service from Eureka
