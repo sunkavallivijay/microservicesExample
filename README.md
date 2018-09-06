@@ -9,6 +9,7 @@
 - Eureka Service admin URL: http://localhost:8761/
 - Stock service endpoint: http://localhost:8301/rest/stock/
 - DB Service endpoint: http://localhost:8300/rest/db/
-- Calling through Zuul proxy url: http://localhost:8761/api/stock-service/rest/stock/
-
-* Note: In zuul proxy url, api is configured in zuul config with routes configuration pointing to the other service url's.
+- Calling Stock service endpoint through Zuul proxy url: http://localhost:8761/api/stock-service/rest/stock/
+- Calling DB Service through zuul proxy: http://localhost:8761/api/db-service/rest/db/
+* Note: In zuul proxy url, */api* is configured in zuul config with routes configuration pointing to the other service url's.
+* Zuul knows which service the call should be routed basing on the part after '/api' i.e. '/stock-service' and 'db-service' which are names of other service applications and are as configured in zuul config.
